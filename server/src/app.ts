@@ -1,11 +1,9 @@
+// Import dependencies
 import express from 'express'
-import cors from 'cors';
-import { measureMemory } from 'vm';
 
 const app = express()
-app.use(express.json())
-app.use(cors());
 
+// Get method to handle GET request
 app.get('/', (req,res)=>{
     const lines = [
         [0, 1, 2],
@@ -17,9 +15,11 @@ app.get('/', (req,res)=>{
         [0, 4, 8],
         [2, 4, 6],
     ]
+    // Send winning combinations array
     return res.status(200).json(lines)
 })
 
+// Binds and listens for connections on the specified host and port
 app.listen(4000, ()=>{
     console.log(`Server running at http:localhost:4000`);
 })

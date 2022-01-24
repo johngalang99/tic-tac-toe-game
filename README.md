@@ -20,7 +20,7 @@ Tic-tac-toe is played on a three-by-three grid by two players, who alternately p
 -   Clone this repository in your computer.
 -   You need Node running in your computer.
 -   When inside server folder, in a command line run `npm install` to get all the required dependencies.
--   Run `npm start` to start the backend application. You should be able to see the game ready in [Server running at http:localhost:4000](http://localhost:4000/).
+-   Run `npm start` to start the backend application. You should be able to see the the winning combinations ready as an API in [Server running at http:localhost:4000](http://localhost:4000/).
 -   Then inside the client folder, run `npm start` to have the game running. Make sure you have the game running in [localhost:3000](http://localhost:3000).
 
 ## Feedback and issues:
